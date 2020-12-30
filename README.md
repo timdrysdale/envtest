@@ -13,6 +13,6 @@ export SUBCMD_TEST=pong
 main()::viper.Get("test")                   = bar
 main()::go func()::viper.Get("test")        = bar
 main()::func()::viper.Get("test")           = bar
-main():func()::viper.SetEnvPrefix("SUBCMD")
+main()::func()::viper.SetEnvPrefix("SUBCMD")
 main()::func()::viper.Get("test")           = pong
 ```

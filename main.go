@@ -36,7 +36,7 @@ func tryagain() {
 }
 
 func trydiff() {
-	fmt.Println("main():func()::viper.SetEnvPrefix(\"SUBCMD\")")
+	fmt.Println("main()::func()::viper.SetEnvPrefix(\"SUBCMD\")")
 	viper.SetEnvPrefix("SUBCMD")
 	fmt.Printf("main()::func()::viper.Get(\"test\")           = %s\n", viper.Get("test"))
 	viper.AutomaticEnv()
